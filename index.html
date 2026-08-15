@@ -2,7 +2,16 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap');
 
-.aima *{box-sizing:border-box;margin:0;padding:0}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: var(--cream);
+}
+
+.aima{margin:0;padding:0}
 .aima{
   --coral:#EC3B57; --coral-2:#F0506A; --crimson:#B21E3C;
   --black:#131215; --black-2:#1B191E; --black-3:#0E0D10;
@@ -11,7 +20,7 @@
   --display:'Sora',system-ui,sans-serif; --body:'IBM Plex Sans',system-ui,sans-serif; --mono:'IBM Plex Mono',ui-monospace,monospace;
   --maxw:1200px; --pad:clamp(20px,5vw,60px);
   font-family:var(--body); color:var(--ink); font-size:17px; line-height:1.65;
-  -webkit-font-smoothing:antialiased; background:var(--cream);
+  -webkit-font-smoothing:antialiased; 
 }
 .aima a{color:inherit;text-decoration:none}
 .aima img{max-width:100%;display:block}
