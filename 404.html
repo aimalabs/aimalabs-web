@@ -3,17 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page Not Found</title>
+    <title>404 - Page Not Found · AIMALABS</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="aima">
-        <div class="not-found">
-            <h1>404</h1>
-            <h2>Page Not Found</h2>
-            <p>The page you're looking for doesn't exist or has been moved.</p>
-            <a href="/" class="btn btn-coral">Go to Homepage</a>
-        </div>
+        <header class="hdr">
+            <div class="wrap nav">
+                <a class="brand" href="index.html"><img src="assets/aima-logo.png" alt="AIMALABS"/><b>AIMALABS</b></a>
+                <nav class="navlinks" id="nav"><a href="index.html">Home</a><a href="technology.html">Technology</a><a href="evidence.html">Evidence</a><a href="news.html">News</a><a href="team.html">Team</a><a href="contact.html">Contact</a><a class="btn btn-coral" href="contact.html">Book a demo</a></nav>
+            </div>
+        </header>
+        <section class="phead not-found-section">
+            <div class="wrap center">
+                <span class="eyebrow">404 Error</span>
+                <h1 class="mt-14">Page Not Found</h1>
+                <p class="mt-18">The page you're looking for doesn't exist or has been moved.</p>
+                <div class="hero-cta center mt-30">
+                    <a href="index.html" class="btn btn-coral">Return to Homepage</a>
+                </div>
+            </div>
+        </section>
+        <footer class="foot">
+            <div class="wrap">
+                <div class="foot-bot">
+                    <span>© <span class="yr"></span> AIMALABS LTD · A company incorporated in England &amp; Wales, United Kingdom</span>
+                    <span><a href="https://www.linkedin.com/in/vasiliki-vlacha-59806a8a/" target="_blank" rel="noopener">LinkedIn</a></span>
+                </div>
+            </div>
+        </footer>
     </div>
+    <script>
+    (function(){
+        document.querySelectorAll('.aima .yr').forEach(function(el){el.textContent=new Date().getFullYear()});
+    })();
+    </script>
 </body>
 </html>
